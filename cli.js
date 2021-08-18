@@ -46,13 +46,8 @@ fs.readdir(templatesPath, (err, names) => {
                 fs.readdir(filePath, (err2, names2) => {
                     if (err2) return console.log('err', err2)
 
-                    // console.log('names2', names2)
-
                     names2.forEach(fileName => {
                         const subFilePath = path.resolve(filePath, fileName)
-
-                        // console.log('subFilePath', subFilePath)
-
                         // 判断是否为文件夹
                         fs.stat(subFilePath, (err3, stats) => {
                             const copyPath = path.relative(templatePath, subFilePath)
@@ -62,10 +57,8 @@ fs.readdir(templatesPath, (err, names) => {
                                 // 创建文件夹
                                 fs.mkdir(dirPath, (err4) => {
                                     if (err4) console.error('mkdir error:', err4)
-                                    else {
-                                        // 递归读取
-                                        readdir(subFilePath)
-                                    }
+                                    // 递归读取
+                                    else readdir(subFilePath)
                                 })
                             }
                             // 文件
