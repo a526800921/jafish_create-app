@@ -4,7 +4,7 @@
   "description": "模板创建工具",
   "main": "index.js",
   "bin": {
-    "create-app": "/cli.js"
+    "create-app": "./cli.js"
   },
   "author": "",
   "license": "ISC",
