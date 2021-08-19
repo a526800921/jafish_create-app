@@ -1,0 +1,22 @@
+.tabbar {
+    background-color: #fff;
+}
+
+.tabbar-icon {
+    width: 54px;
+    height: 54px;
+    display: block;
+}
+
+.tabbar div.am-tab-bar-bar {
+    height: 100px;
+}
+
+.tabbar div.am-tab-bar-tab {
+    flex-direction: row;
+}
+
+.tabbar p.am-tab-bar-tab-title {
+    font-size: 34px;
+    margin-left: 10px;
+}
