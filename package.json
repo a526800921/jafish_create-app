@@ -1,6 +1,6 @@
 {
   "name": "@jafish/create-app",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "模板创建工具",
   "main": "index.js",
   "bin": {
